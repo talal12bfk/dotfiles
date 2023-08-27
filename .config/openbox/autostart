@@ -1,0 +1,4 @@
+pcmanfm --desktop &
+tint2 &
+picom &
+nitrogen --restore &
