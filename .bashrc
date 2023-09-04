@@ -1,7 +1,6 @@
 #!/bin/bash
 
-alias la='ls -lah $@'
-alias deb='proot-distro login debian --user tgolmgol'
+alias la='ls -lah'
 
 shopt -s autocd
 
