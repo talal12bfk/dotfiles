@@ -12,4 +12,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
     use 'preservim/nerdtree'
+
+    use {"L3MON4D3/LuaSnip", tag = "v2.*"   }
+
 end)

@@ -1,6 +1,7 @@
 lua require('plugins')
 
 set guifont=HackNerdFont
+set clipboard+=unnamedplus
 colorscheme dracula
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
@@ -23,3 +24,5 @@ set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 
 let g:airline_powerline_fonts = 1
+
+
