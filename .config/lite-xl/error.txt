@@ -1,0 +1,26 @@
+Error: ...om.termux/files/home/.config/lite-xl/plugins/minimap.lua:548: invalid UTF-8 code
+
+stack traceback:
+	[C]: in function 'utf8extra.find'
+	...om.termux/files/home/.config/lite-xl/plugins/minimap.lua:548: in function 'plugins.minimap.draw'
+	/data/data/com.termux/files/usr/share/lite-xl/core/view.lua:327: in function 'core.view.draw_scrollbar'
+	...data/com.termux/files/usr/share/lite-xl/core/docview.lua:595: in upvalue 'DocView_draw'
+	...mux/files/home/.config/lite-xl/plugins/lintplus/init.lua:532: in upvalue 'old_draw'
+	....termux/files/usr/share/lite-xl/plugins/linewrapping.lua:529: in function 'core.docview.draw'
+	/data/data/com.termux/files/usr/share/lite-xl/core/node.lua:616: in function 'core.node.draw'
+	/data/data/com.termux/files/usr/share/lite-xl/core/node.lua:31: in function 'core.node.propagate'
+	/data/data/com.termux/files/usr/share/lite-xl/core/node.lua:621: in function 'core.node.draw'
+	/data/data/com.termux/files/usr/share/lite-xl/core/node.lua:30: in function 'core.node.propagate'
+	...	(skipping 4 levels)
+	...ata/com.termux/files/usr/share/lite-xl/core/rootview.lua:551: in upvalue 'root_view_draw'
+	...mux/files/home/.config/lite-xl/libraries/widget/init.lua:1468: in upvalue 'draw'
+	....termux/files/usr/share/lite-xl/plugins/autocomplete.lua:725: in upvalue 'root_view_draw'
+	...m.termux/files/usr/share/lite-xl/plugins/contextmenu.lua:32: in upvalue 'root_view_draw'
+	.../com.termux/files/usr/share/lite-xl/plugins/treeview.lua:586: in function 'core.rootview.draw'
+	/data/data/com.termux/files/usr/share/lite-xl/core/init.lua:1393: in function 'core.step'
+	/data/data/com.termux/files/usr/share/lite-xl/core/init.lua:1443: in upvalue 'core_run'
+	...m.termux/files/home/.config/lite-xl/plugins/settings.lua:1896: in function 'core.run'
+	(...tail calls...)
+	[string "local core..."]:14: in function <[string "local core..."]:6>
+	[C]: in function 'xpcall'
+	[string "local core..."]:6: in main chunk
