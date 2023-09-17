@@ -1,3 +1,19 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-termux-x11 :1 -xstartup "dbus-launch --exit-with-session $1"
+
+function x11-start {
+    termux-x11 :1 -xstartup "dbus-launch --exit-with-session $1"
+}
+
+function _x11-start {
+    local WM="awesome bspwm dwm fluxbox i3 openbox qtile"
+    
+    COMPREPLY=()
+
+    if [ "$COMP_CWORD" -eq 1 ] ; then
+        local CURRENT_WORD=${COMP_WORDS[COMP_CWORD]}
+        COMPREPLY=($( compgen -W "$WM" -- $CURRENT_WORD ))
+    fi
+}
+
+complete -F _x11-start x11-start
